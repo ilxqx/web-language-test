@@ -1,0 +1,15 @@
+[package]
+name = "web-rust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.96"
+axum = { version = "0.8.1", features = ["macros"] }
+fastrand = "2.3.0"
+sea-orm = { version = "1.1.5", features = ["runtime-tokio", "sqlx-postgres", "macros", "with-chrono"] }
+serde = { version = "1.0.218", features = ["derive"] }
+serde_json = "1.0.139"
+tokio = { version = "1.43.0", features = ["full"] }
+tracing = { version = "0.1.41", features = ["async-await"] }
+tracing-subscriber = { version = "0.3.19", features = ["chrono"] }
