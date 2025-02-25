@@ -15,5 +15,5 @@ func startServer() error {
 	log.Info("Connected to database successfully")
 
 	app := NewApp(db)
-	return app.Run()
+	return app.RunGin()
 }
